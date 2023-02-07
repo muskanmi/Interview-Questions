@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numberOne = 0, numberTwo = 1;
+        let nextNumber, i;
+        let number = parseInt(prompt("Enter the limit for Fibonacci Series"));
+
+        document.write("Fibonacci Series: ");
+        for(i = 1; i <= number; i++) {
+            document.write(" <br> " + numberOne);
+            nextNumber = numberOne + numberTwo;
+
+            numberOne = numberTwo;
+            numberTwo = nextNumber;
+        }
+    </script>
+</body>
+</html>

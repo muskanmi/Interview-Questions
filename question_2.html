@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isEven(number) {
+            return number % 2 == 0;
+        }
+        function isOdd(number) {
+            return number  % 2 != 0;
+        }
+        function findSumEven(no){
+            let sumEven = 0;
+            for(let i = 1; i <= no; i++){
+                if(isEven(i)) {
+                    sumEven += i;
+                }
+            }
+            return sumEven;
+        }
+        function findSumOdd(no){
+            let sumOdd = 0;
+            for(let i = 1; i <= no; i++){
+                if(isOdd(i)) {
+                    sumOdd += i;
+                }
+            }
+            return sumOdd;
+        }
+        document.write(findSumEven(100));
+        document.write("\n");
+        document.write(findSumOdd(100));
+    </script>
+</body>
+</html>

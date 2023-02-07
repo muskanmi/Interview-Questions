@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = []; // declare a array
+        array.push("Saab");
+        array.push("Volvo");
+        array.push("BMW")  // add the item
+        document.write(array);
+        document.write("<br>");
+        let popped = array.pop();  // delete the item
+        document.write(popped);
+        document.write("<br>");
+        document.write(array);
+        document.write("<br>");
+
+        let index_item = array.splice(1, 0, "Porsche"); // insert item in any index
+        document.write(array);
+        document.write("<br>");
+
+        let index = array.indexOf("Volvo");
+        if(index > -1) {
+            array.splice(index, 2);
+        }
+        document.write(array);   // delete item from particular index
+ 
+
+    </script>
+</body>
+</html>
